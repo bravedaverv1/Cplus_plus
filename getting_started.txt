@@ -1,3 +1,9 @@
+C++ projects are better done when in vs code you only have your porjct folder open
+given that when you compile the file, additionial files are created
+and a .vsocde folder that contains that compiled code is created and it is sent directly
+to the parent folder and not the project folder you have open. being directly in
+your project folder only prevents that issue
+
 To Start Running C++ Code, Go To The Extensions Tab
 and Download C/C++ Extension Pack & Helpful but not necessary: Code Runner 
 
@@ -27,4 +33,19 @@ then press the play button if still needed if not done
 by clicking the above option which will build or compile the code.
 
 from vs terminal you can run the compiled version using, inside your project folder, 
-./file-name(excluding .cpp) and pressing enter
+./file-name(excluding .cpp) and pressing enter.
+the output should display in the terminal.
+the also is also displayed in the debug console
+
+** any changes made to this file, you need to press the to building
+or compile the code. 
+and then you can run by using the file name
+
+CODE RUNNER EXTENSION:
+Allows you to run your code by  selecting on the down options button
+found to the right of the play button and select run code. 
+using run code allows you to compile AND display the output
+
+** for it to run in vs terminal as well when you click run code
+you may  need to configure your code runner extension by going to its settings
+and assuring Code-runner run in terminal is seleted as well.
