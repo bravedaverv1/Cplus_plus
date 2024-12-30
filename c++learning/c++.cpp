@@ -26,7 +26,7 @@ int main() {
     // * c++ standard library: 
     // in this function, we want to write code to print something on the screen
     // for that, we use the c++ standard library. on the top, we use #include <iostream>
-    std:: cout << "Hello World.";
+    std:: cout << "Hello World." << std:: endl;
     // ? std , what is it?
     // references out standard library. 
     // like a bucket or a container for features that are currently available for us.
