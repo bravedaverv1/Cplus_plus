@@ -1,0 +1,30 @@
+To Start Running C++ Code, Go To The Extensions Tab
+and Download C/C++ Extension Pack & Helpful but not necessary: Code Runner 
+
+create a .cpp file (C++ file)
+
+write a valid program:
+    #include <iostream>
+
+    int main(){
+        std:: cout <<:"Hello World.
+        return 0;
+    }
+
+the goal is then to be able to complile that file
+in project folder, run g++. if it shows the below, you 
+are ready for the next step:
+clang++: error: no input files
+
+** g++ is the c++ compiler. if you type in g++
+and you do not have it installed, you can install the 
+xcode developer tool. in terminal, run:
+xcode-select --install
+
+on project file, select settings and have it set to
+C/C++: g++ build and debug active file
+then press the play button if still needed if not done 
+by clicking the above option which will build or compile the code.
+
+from vs terminal you can run the compiled version using, inside your project folder, 
+./file-name(excluding .cpp) and pressing enter
