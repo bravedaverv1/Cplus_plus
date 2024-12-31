@@ -1,0 +1,8 @@
+C++ Naming Conventions
+There is no right or wrong on how you wish to address variables. Different teams prefer different conventions
+
+int file_size; Snake Case - lower case variables to name your variables and constants.
+
+int FileSize; Pascal Case - capitalize the first letter of every variable.
+
+int fileSize; - Camel Case.
