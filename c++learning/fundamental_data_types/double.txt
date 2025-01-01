@@ -1,0 +1,14 @@
+Data Types For Double
+
+? float , what is it? 
+takes 4 bytes in memory, in 4 bytes in memory you 
+can store numbers between -3.4E38 and 3.4E38
+
+? double , what is it? 
+takes 8 bytes in memory, in 8 bytes in memory you 
+can store numbers between -1.7E308 and 1.7E308 
+
+? long double , what is it? 
+the same as int
+takes 8 bytes in memory, in 8 bytes in memory you 
+can store numbers between -3.4E932 to 1.7E4832
