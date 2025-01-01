@@ -1,0 +1,18 @@
+Data Types for storing Whole Numbers
+
+? int , what is it? 
+takes 4 bytes in memory, in 4 bytes in memory you 
+can store numbers between -2B and 2B
+
+short , what is it? 
+takes 2 bytes in memory, in 2 bytes in memory you 
+can store numbers between -32,768 and 32,676
+
+? Long , what is it? 
+the same as int
+takes 4 bytes in memory, in 4 bytes in memory you 
+can store numbers between -2B and 2B
+
+? Long Long , what is it?
+takes 8 bytes in memory, in 8 bytes in memory you 
+can store really really big numbers.
