@@ -1,0 +1,8 @@
+Boolean Data Types
+
+? bool , what is it? 
+takes 1 bytes in memory, in 1 bytes in memory you 
+can store numbers between true and false
+
+? char , what is it? 
+used for storing single characters.
