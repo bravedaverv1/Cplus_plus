@@ -3,7 +3,13 @@
 using namespace std;
 
 int main(){
-    cout << "testing..?" << endl;
+    cout << "testing..?" << endl; 
+    // cout and endl all come from std namespace.
+    // each with their own ability.
+    // we dont need to specify std:: before them
+    // because this file, with using namespace std, 
+    // understands that they may come from there, 
+    // and if it does no error is shown.
 }
 
 // * personally, debatably SLOWER than vs code
