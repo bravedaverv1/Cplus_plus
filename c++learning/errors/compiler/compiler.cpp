@@ -20,7 +20,8 @@ int main() {
     char answer;
     int score = 0;
 
-    std::cout << "Who Wants To Be a Millionaire\n\n"
+    // std::cout << "Who Wants To Be a Millionaire\n\n"
+    std::cout << "Who Wants To Be a Millionaire\n\n";
     // * the compiler would catch that you are missing ";" at the end of this line.
 
     std::cout << "Question 1)\n\n";
