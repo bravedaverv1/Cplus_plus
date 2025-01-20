@@ -16,4 +16,7 @@ int main(){
   // dot notation
   electric_relaxation.add_title("Electric Relaxation");
   std::cout << electric_relaxation.get_title() << std::endl;
+
+  electric_relaxation.add_artist("A Tribe Called Quest"); 
+  std::cout << electric_relaxation.get_artist() << std::endl;
 }
