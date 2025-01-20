@@ -1,3 +1,4 @@
+#include <iostream>
 #include "song.hpp"
 // ? why are we including song.hpp ?
 // unlike regular functions, for classes, we must include the header file here.
