@@ -1,0 +1,46 @@
+1.8 Special Topic: Escape Sequences
+
+How can you display a string containing quotation marks, such as
+
+Hello, "World"
+
+You can’t use
+
+cout << "Hello, "World"";
+
+As soon as the compiler reads "Hello, ", it thinks the string is finished, 
+and then it gets all confused about World. Compilers have a one-track mind, 
+and if a simple analysis of the input doesn’t make sense to them, they just 
+refuse to go on, and they report an error. In contrast, a human would 
+probably realize that the second and third quotation marks were supposed to 
+be part of the string.
+
+Well, how do we then display quotation marks on the screen? The designers of C++ 
+provided an escape hatch. Mark each quotation mark with a backslash character 
+(\), like this:
+
+cout << "Hello, \"World\"";
+
+The sequence \
+denotes a literal quote, not the end of a string. Such a sequence is called an escape sequence.
+(Definition of escape sequence: A sequence of characters that starts with an escape character, such as \n or \".)
+
+\\
+There are a few other escape sequences. If you actually want to show a backslash on the display, 
+you use the escape sequence \\. The statement
+
+cout << "Hello\\World";
+
+prints
+
+Hello\World
+
+\n
+Finally, the escape sequence \n denotes a newline character that starts a new line on the screen. 
+The command (Definition of newline: The '\n'; character, which indicates the end of a line.)
+
+cout << "Hello, World!\n";
+
+has the same effect as
+
+cout << "Hello, World!" << endl;

@@ -1,0 +1,72 @@
+1.11 How To: Describing an Algorithm with Pseudocode
+
+Before you are ready to write a program in C++, you need to develop an 
+algorithm—a method for arriving at a solution for a particular problem. 
+Describe the algorithm in pseudocode––a sequence of precise steps 
+formulated in English. To illustrate, we’ll devise an algorithm for this 
+problem:
+
+Problem Statement: 
+You have the choice of buying one of two cars. 
+One is more fuel efficient than the other, but also more expensive. 
+You know the price and fuel efficiency (in miles per gallon, mpg) of both cars. 
+You plan to keep the car for ten years. 
+Assume a price of $4 per gallon of gas and usage of 15,000 miles per year. 
+You will pay cash for the car and not worry about financing costs. 
+Which car is the better deal?
+
+Step 1 Determine the inputs and outputs.
+In our sample problem, we have these inputs:
+purchase price1 and fuel efficiency1, the price and fuel efficiency (in mpg) of the first car
+purchase price2 and fuel efficiency2, the price and fuel efficiency (in mpg) of the second car
+
+We simply want to know which car is the better buy. That is the desired output.
+
+Step 2 Break down the problem into smaller tasks.
+
+For each car, we need to know the total cost of driving it. 
+Let’s do this computation separately for each car. Once we have the total cost for 
+each car, we can decide which car is the better deal.
+
+    The total cost for each car is purchase price + operating cost.
+
+We assume a constant usage and gas price for ten years, so the operating cost depends 
+on the cost of driving the car for one year.
+
+    The operating cost is 10 x annual fuel cost.
+    The annual fuel cost is price per gallon x annual fuel consumed.
+
+The annual fuel consumed is annual miles driven / fuel efficiency. 
+For example, if you drive the car for 15,000 miles and the fuel efficiency is 
+15 miles/gallon, the car consumes 1,000 gallons.
+
+Step 3 Describe each subtask in pseudocode.
+
+In your description, arrange the steps so that any intermediate values are 
+computed before they are needed in other computations. For example, list the 
+step
+total cost = purchase price + operating cost
+after you have computed operating cost.
+
+Here is the algorithm for deciding which car to buy:
+    For each car, compute the total cost as follows: 
+    annual fuel consumed = annual miles driven / fuel efficiency
+    annual fuel cost = price per gallon x annual fuel consumed
+    operating cost = 10 x annual fuel cost
+    total cost = purchase price + operating cost
+    If total cost of car1 < total cost of car2
+        Choose car1.
+    Else
+        Choose car2.
+
+Step 4 Test your pseudocode by working a problem.
+We will use these sample values:
+    Car 1: $25,000, 50 miles/gallon
+    Car 2: $20,000, 30 miles/gallon
+Here is the calculation for the cost of the first car:
+annual fuel consumed = annual miles driven / fuel efficiency = 15000 / 50 = 300
+annual fuel cost = price per gallon x annual fuel consumed = 4 x 300 = 1200
+operating cost = 10 x annual fuel cost = 10 x 1200 = 12000
+total cost = purchase price + operating cost = 25000 + 12000 = 37000
+
+Similarly, the total cost for the second car is $40,000. Therefore, the output of the algorithm is to choose car 1.

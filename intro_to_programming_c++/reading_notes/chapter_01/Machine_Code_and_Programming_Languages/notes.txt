@@ -1,0 +1,68 @@
+1.4 Machine Code and Programming Languages
+
+On the most basic level, computer instructions are extremely primitive. 
+The processor executes machine instructions. A typical sequence of machine instructions is
+    1. Move the contents of memory location 40000 into the CPU.
+    2. If that value is greater than 100, continue with the instruction that is stored in memory location 11280.
+
+encoded as numbers
+Actually, machine instructions are encoded as numbers so that they can be stored in memory. On a Pentium processor, this sequence of 
+instruction is encoded as the sequence of numbers
+161 40000 45 100 127 11280
+On a processor from a different manufacturer, the encoding would be different. When this kind of processor fetches this sequence of numbers, 
+it decodes them and executes the associated sequence of commands.
+
+How can we communicate the command sequence to the computer? 
+The simplest method is to place the actual numbers into the computer memory. This is, in fact, how the very earliest computers worked. 
+However, a long program is composed of thousands of individual commands, and it is a tedious and error-prone affair to look up the numeric 
+codes for all commands and place the codes manually into memory. As already mentioned, computers are really good at automating tedious 
+and error-prone activities. It did not take long for computer scientists to realize that the computers themselves could be harnessed to 
+help in the programming process.
+
+high-level programming languages 
+Computer scientists devised high-level programming languages that allow programmers to describe tasks, using a syntax that is more closely related to the 
+problems to be solved.
+
+C++ programming language
+developed by Bjarne Stroustrup in the 1980s.
+
+(Definition of high-level programming language: A programming language that provides an abstract view of a computer and allows programmers to focus on their problem domain.) 
+(Definition of syntax: Rules that define how to form instructions in a particular programming language.)
+
+over the years, C++ has grown by the addition of many features.
+A standardization process culminated in the publication of the international C++ standard in 1998.
+A minor update to the standard was issued in 2003.
+A major revision came to fruition in 2011, followed by updates in 2014 and 2017.
+Just as importantly, C++ is commonly used for programming “embedded systems”, computers that 
+control devices such as automobile engines or robots.
+
+Here is a typical statement in C++:
+
+if (int_rate > 100) { cout << "Interest rate error"; }
+This means, “If the interest rate is over 100, display an error message”.
+
+compiler
+A special computer program, a compiler, translates this high-level description into machine 
+instructions for a particular processor.
+(Definition of compiler: A program that translates code in a high-level language (such as C++) to machine instructions.)
+
+High-level languages are independent of the underlying hardware. C++ instructions work equally well on an Intel Pentium 
+and a processor in a cell phone. Of course, the compiler-generated machine instructions are different, but the programmer 
+who uses the compiler need not worry about these differences.
+
+Questions
+1.4.1: What is true about a compiler?
+1. Which of the following statements is true about a compiler?
+A. A C++ programmer using a compiler doesn't need to know machine instructions.
+A C++ programmer formulates programs in C++, and the compiler translates the programs into machine instructions for a particular processor.
+
+1.4.2: Determine which kind of program is not typically written in C++.
+Which of the following programs are not typically written in C++?
+A. Web applications
+Web applications (that is, the programs that you use in a web browser, such as Google Maps or Facebook) are written in languages that 
+make it easy to produce user interfaces. However, they may use services that are written in C++.
+
+1.4.3: Choose what is not an advantage of programming instead of machine code.
+Which of the following is not an advantage of programming in a higher-level language instead of machine code?
+A. Instructions do not need to be encoded before a program runs.
+Programs written in C++ still must be compiled into machine instructions before they are run.

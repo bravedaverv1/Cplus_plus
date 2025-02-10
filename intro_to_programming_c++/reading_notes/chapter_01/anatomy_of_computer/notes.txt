@@ -1,0 +1,73 @@
+The Anatomy of a Computer
+
+Understanding Programming
+To understand the programming process, you need to have a rudimentary understanding 
+of the building blocks that make up a computer. 
+
+Larger Computers 
+Larger computers have faster, larger, or more powerful components, 
+but they have fundamentally the same design.
+
+central processing unit (CPU)
+At the heart of the computer lies the central processing unit (CPU)
+It consists of a single CHIP, or a small number of CHIPS.
+The part of a computer that executes the machine instructions.
+CPU performs 
+The CPU performs program control and data processing. That is, the CPU locates 
+and executes the program instructions; it carries out arithmetic operations 
+such as addition, subtraction, multiplication, and division; it fetches data 
+from external memory or devices and stores data back.
+
+Computer Chip 
+A computer chip (integrated circuit) is a component with a plastic or metal housing, metal connectors, 
+and inside wiring made principally from silicon. 
+
+CPU Chip
+For a CPU chip, the inside wiring is enormously complicated. For example, the 
+Pentium chip (a popular CPU for personal computers at the time of this writing) 
+is composed of several million structural elements, called TRANSITORS. 
+
+Two Kinds Of Storage
+    Primary storage
+    Primary storage, or memory, is made from electronic circuits that can store data, provided they are supplied with electric power.
+    Secondary storage
+    Secondary storage, usually a hard disk or a solid-state drive, provides slower and less expensive storage that persists without electricity.
+        - Storage that persists without electricity, e.g., a hard disk.
+        - A hard disk consists of rotating platters, which are coated with a magnetic material.
+        - A device that stores information on rotating platters with magnetic coating
+        - A solid-state drive uses electronic components that can retain information without power, and without moving parts.
+
+Programs and data are typically stored on
+the hard disk and loaded into memory when the program starts. The program then updates the data in memory and writes the modified data back to the hard disk.
+
+To interact with a human user
+a computer requires peripheral devices.
+The computer transmits information (called output) to the user through a display screen, speakers, and printers.
+The user can enter information (called input) by using a keyboard or a pointing device such as a mouse.
+
+self-contained units AND networks
+Some computers are self-contained units, whereas others are interconnected through networks.
+Through the network cabling, the computer can read data and programs from central storage 
+locations or send data to other computers. For the user of a networked computer it may not 
+even be obvious which data reside on the computer itself and which are transmitted through 
+the network.
+
+Program instructions and data (such as text, numbers, audio, or video) reside in secondary storage or elsewhere on the network.
+
+How it works.. Altogether 
+When a program is started its instructions are brought into memory, where the CPU can read them.
+The CPU reads and executes one instruction at a time.
+As directed by these instructions, the CPU reads data, modifies it, and writes it back to memory or secondary storage.
+Some program instructions will cause the CPU to place dots on the display screen or printer or to vibrate the speaker
+As these actions happen many times over and at great speed, the human user will perceive images and sound.
+Some program instructions read user input from the keyboard, mouse, touch sensor, or microphone. The program analyzes 
+the nature of these inputs and then executes the next appropriate instruction.
+
+Questions
+1.2.1: What part of the computer executes instructions?
+The part of the computer that executes instructions is the _____.
+A. central processing unit
+
+1.2.2: What type of storage persists without electricity?
+1. ______ storage, which persists without electricity, is slower but not very expensive.
+A. Secondary

@@ -1,0 +1,29 @@
+1.3 Computing and Society: Computers Are Everywhere
+
+Computers were first invented in 1940s, in this time a computer filed an entire room.
+
+ENIAC (electronic numerical integrator and computer)
+completed in 1946 at the University of Pennsylvania.
+The ENIAC was used by the military to compute the trajectories of projectiles.
+
+Nowadays, computing facilities of search engines, Internet shops, and social networks fill huge buildings called data centers.
+At the other end of the spectrum, computers are all around us. Your cell phone has a computer inside, as do many credit cards 
+and fare cards for public transit. A modern car has several computers––to control the engine, brakes, lights, and radio.
+
+The advent of ubiquitous computing changed many aspects of our lives. 
+Factories used to employ people to do repetitive assembly tasks that are today 
+carried out by computer-controlled robots, operated by a few people who know how 
+to work with those computers. Books, music, and movies nowadays are often consumed 
+on computers, and computers are almost always involved in their production. The 
+book that you are reading right now could not have been written without computers.
+
+Knowing about computers and how to program them has become an essential skill in many careers. 
+Engineers design computer-controlled cars and medical equipment that preserve lives. Computer 
+scientists develop programs that help people come together to support social causes. For example, 
+activists used social networks to share videos showing abuse by repressive regimes, and this 
+information was instrumental in changing public opinion.
+
+As computers, large and small, become ever more embedded in our everyday lives, it is increasingly 
+important for everyone to understand how they work, and how to work with them. As you use this book 
+to learn how to program a computer, you will develop a good understanding of computing fundamentals 
+that will make you a more informed citizen and, perhaps, a computing professional.

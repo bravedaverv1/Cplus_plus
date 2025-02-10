@@ -1,0 +1,115 @@
+1.9 Errors
+
+when you make an error in a C++ program, the compiler will not try to guess 
+what you meant. (This is actually a good thing. If the compiler were to guess
+wrongly, the resulting program would do the wrong thing—quite possibly with 
+disastrous effects.)
+
+Experiment a little with the hello.cpp program. What happens if you make a typing 
+error such as
+
+cot << "Hello, World!" << endl;
+cout << "Hello, World! << endl;
+cout << "Hollo, World!" << endl;
+
+cot - type of error: compile-time error or syntax error
+In the first case, the compiler will complain that it has no clue what you 
+mean by cot.
+The exact wording of the error message is dependent on the compiler, but it 
+might be something like “Undefined symbol cot”. 
+This is a compile-time error or syntax error. Something is wrong according to the language rules, and the compiler finds it.
+When the compiler finds one or more errors, it will not translate the program to machine code, and as a consequence there is 
+no program to run. You must fix the error and compile again.
+it is common to go through several rounds of fixing compile-time errors before compilation succeeds for the first time.
+(Definition of compile-time error: An error that is detected when a program is compiled.)
+(Definition of syntax error: An instruction that does not follow the programming language rules and is rejected by the compiler. 
+(A form of compile-time error.))
+
+cout << "Hello, World! << endl;
+If the compiler finds an error, it will not simply stop and give up. It will try to report as many errors as it can find, so you can 
+fix them all at once. Sometimes, however, one error throws it off track. This is likely to happen with the error in the second line.
+Because the programmer forgot the closing quote, the compiler will keep looking for the end of the string. In such cases, it is common 
+for the compiler to emit bogus error reports for neighboring lines. You should fix only those error messages that make sense to you and then recompile.
+
+cout << "Hollo, World!" << endl; - type of error: run-time error. often also called logic errors.
+The error in the third line is of a different kind. The program will compile and run, but its output will be wrong. It will print
+Hollo, World!
+This is a run-time error. The program is syntactically correct and does something, but it doesn’t do what it is supposed to do.
+The compiler cannot find the error, and it must be flushed out when the program runs, by testing it and carefully looking at its output.
+Because run-time errors are caused by logical flaws in the program, they are often called logic errors.
+
+Some kinds of run-time errors are so severe that they generate an exception: a signal from the processor that aborts the program with an error message.
+For example, if your program includes the statement cout << 1 / 0; 
+your program may terminate with a “divide by zero” exception. 
+(Definition of run-time error: An error in a syntactically correct program that causes it to act differently from its specification.) 
+(Definition of logic error: An error in a syntactically correct program that causes it to act differently from its specification. (A form of run-time error.))
+(Definition of exception: A class that signals a condition that prevents the program from continuing normally. When such a condition occurs, an object of 
+the exception class is thrown.)
+
+During program development, errors are unavoidable.
+Once a program is longer than a few lines, it requires superhuman concentration to enter it 
+correctly without slipping up once. You will find yourself omitting semicolons or quotes more 
+often than you would like, but the compiler will track down these problems for you.
+
+Run-time errors are more troublesome.
+The compiler will not find them—in fact, the compiler will cheerfully translate 
+any program as long as its syntax is correct—but the resulting program will do 
+something wrong. It is the responsibility of the program author to test the program 
+and find any run-time errors. Program testing is an important topic that you will 
+encounter many times in this book.
+
+questions
+
+1.9.2: Determine which statement would generate a compile-time error.
+A. cout << eleven << endl;
+
+1.9.3: Determine which statement represents a logic error.
+Which of the following statements represents a logic error?
+A. cout << "The sum of 5 and 6 is 10" << endl;
+
+1.9.4: Determine what the syntax error is in this program.
+1. What is the syntax error in the program below?
+#include <iostream>
+using namespace std;
+int main
+{
+   cout << "Hello, Goodbye"; 
+   return 0;
+}
+A. There must be parentheses after main.
+
+Common Error 1.9.1: Misspelling Words.
+
+If you accidentally misspell a word, strange things may happen, and it may 
+not always be completely obvious from the error messages what went wrong. 
+Here is a good example of how simple spelling errors can cause trouble:
+
+#include <iostream>
+  
+using namespace std;
+  
+int Main()
+{
+   cout << "Hello, World!" << endl;
+   return 0;
+}
+
+This code defines a function called Main. The compiler will not consider this 
+to be the same as the main function, because Main starts with an uppercase 
+letter and the C++ language is case sensitive. Upper- and lowercase letters 
+are considered to be completely different from each other, and to the compiler 
+Main is no better match for main than rain. The compiler will compile your Main 
+function, but when the linker is ready to build the executable file, it will 
+complain about the missing main function and refuse to link the program. Of 
+course, the message “missing main function” should give you a clue where to 
+look for the error. 
+(Definition of case sensitive: Distinguishing upper- and lowercase characters.)
+
+If you get an error message that seems to indicate that the 
+compiler is on the wrong track, it is a good idea to check for spelling 
+and capitalization. In C++, most names use only lowercase letters. If you 
+misspell the name of a symbol (for example out instead of cout), the 
+compiler will complain about an “undefined symbol” (or, on some systems, 
+an “undeclared identifier” or “not declared in this scope”). This error 
+message is usually a good clue that you made a spelling error.
+

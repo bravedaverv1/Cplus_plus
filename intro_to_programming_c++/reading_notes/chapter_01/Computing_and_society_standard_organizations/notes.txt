@@ -1,0 +1,23 @@
+1.5 Computing and Society: Standards Organizations
+
+Two standards organizations have jointly developed the definitive standard for the C++ language.
+American National Standards Institute (ANSI)
+International Organization for Standardization (ISO)
+
+The ANSI and ISO standards organizations are associations of industry professionals who
+develop standards for everything from car tires and credit card shapes to programming languages.
+
+
+Why have standards? 
+You encounter the benefits of standardization every day. 
+When you buy a light bulb, you can be assured that it fits in the 
+socket without having to measure the socket at home and the bulb 
+in the store. In fact, you may have experienced how painful the lack 
+of standards can be if you have ever purchased a flashlight with 
+nonstandard bulbs. Replacement bulbs for such a flashlight can be 
+difficult and expensive to obtain.
+
+***Having a standard for a programming language such as C++ means that 
+you can take a program that you developed on one system with one 
+manufacturer’s compiler to a different system and be assured that it 
+will continue to work.

@@ -1,0 +1,179 @@
+1.10 Problem Solving: Algorithm Design
+
+The Algorithm Concept
+
+If you can’t give written instructions for someone to solve the problem, 
+there is no way the computer can magically find the right solution. 
+The computer can only do what you tell it to do. It just does it faster, 
+without getting bored or exhausted.
+
+In order for a computer program to provide an answer to a problem that 
+computes an answer, it must follow a sequence of steps that is
+- Unambiguous
+- Executable
+- Terminating
+
+unambiguous
+The step sequence is unambiguous when there are precise instructions for 
+what to do at each step and where to go next.
+There is no room for guesswork or personal opinion.
+
+executable
+A step is executable when it can be carried out in practice. 
+For example, a computer can list all people that share your hobbies, 
+but it can’t predict who will be your life-long partner.
+
+terminating
+a sequence of steps is terminating if it will eventually come to an end. 
+A program that keeps working without delivering an answer is clearly not useful.
+
+algorithm
+A sequence of steps that is unambiguous, executable, and terminating is called an algorithm.
+Although there is no algorithm for finding a partner, many problems do have algorithms for solving them.
+(Definition of algorithm: An unambiguous, executable, and terminating specification of a way to solve a problem.)
+
+An Algorithm for Solving an Investment Problem
+
+Consider the following investment problem:
+
+You put $10,000 into an account that earns 5 percent interest per year. 
+How many years does it take for the account balance to be double the original?
+
+Could you solve this problem by hand? Sure, you could.
+You keep going until the balance is at least $20,000. Then the last number in the year column is the answer.
+
+Of course, carrying out this computation is intensely boring to you or 
+your younger brother. But computers are very good at carrying out repetitive 
+calculations quickly and flawlessly. What is important to the computer is a 
+description of the steps for finding the solution. Each step must be clear 
+and unambiguous, requiring no guesswork. Here is such a description:
+
+Set year to 0, balance to 10000.
+
+While the balance is less than $20,000
+   Add 1 to the year. 
+   Set the interest to balance x 0.05 (i.e., 5 percent interest).
+   Add the interest to the balance.
+
+Report year as the answer. 
+
+pseudocode
+These steps are not yet in a language that a computer can understand, 
+but you will soon learn how to formulate them in C++. This informal 
+description is called pseudocode.
+(Definition of pseudocode: A high-level description of the actions of a 
+program or algorithm, using a mixture of English and informal programming 
+language syntax.)
+
+Pseudocode
+There are no strict requirements for pseudocode because it is read by human 
+readers, not a computer program. 
+
+Use statements such as the following to describe how a value is set or changed:
+total cost = purchase price + operating cost
+Multiply the balance value by 1.05.
+Remove the first and last character from the word.
+
+Describe decisions and repetitions as follows:
+If total cost 1 < total cost 2
+While the balance is less than $20,000
+For each picture in the sequence
+
+Use indentation to indicate which statements should be selected or repeated:
+For each car
+   operating cost = 10 x annual fuel cost
+   total cost = purchase price + operating cost
+
+Here, the indentation indicates that both statements should be executed for each car.
+Indicate results with statements such as:
+
+Choose car2.
+Report year as the answer.
+
+From Algorithms to Programs
+
+We just developed pseudocode for finding how long it takes to double an 
+investment. Let’s double-check that the pseudocode represents an algorithm; 
+that is, that it is unambiguous, executable, and terminating.
+
+Our pseudocode is unambiguous. It simply tells how to update values in each step. 
+The pseudocode is executable because we use a fixed interest rate.
+It requires a bit of thought to see that the steps are terminating: With every 
+step, the balance goes up by at least $500, so eventually it must reach $20,000.
+
+1. understand the problem
+2. develop and descrip and algorithm
+3. test the algorithm with simple inputs
+4. translate the algorithm to C++
+5. Compile and test your program
+
+1.10.1: Determine whether the line inside the if statement will be executed.
+Fred's Finest Furniture has a "we pay the sales tax" sale. But Fred doesn't 
+plan to actually pay the sales tax himself. So he has devised the following 
+algorithm to adjust the prices of the items that he sells. Trace through the 
+algorithm as each line executes. When prompted to determine which line of 
+code will execute next, use the values in the table to determine whether the 
+line inside the if statement will be executed. You'll probably need a 
+calculator to follow along.
+
+1. original_price = 995
+2. tax_rate = 6
+3. tax = original_price * tax_rate / 100
+4. price = original_price + tax
+5. Round price to nearest dollar
+6. last_two = last two digits of price
+7. If last_two > 95:
+8.   Add 100 to price
+9. Change last two digits of price to 95
+
+1. Line 1 executes. What is the value of original_price?
+a. 995
+
+2. Next, line 2 executes. What is the value of tax_rate?
+A. 6
+
+3. Next, line 3 executes. What is the value of tax?
+A. 59.7
+
+4. Next, line 4 executes. What is the value of price?
+A. 1054.7
+
+5. Next, line 5 executes. What is the new value of price?
+A. 1055
+
+6. Next, line 6 executes. What is the value of last_two?
+A. 55
+
+7. Next, line 7 executes. The next line executed after line 7 is line _____.
+A. 9
+
+8. What is the new value of price?
+A. 1095
+
+1.10.3: Determine the design error in the algorithm.
+1. What is the problem with the following algorithm?
+Repeat a number of times
+   Add sales amount to total sales.
+The algorithm is ambiguous because it does not specify how many times to 
+repeat the Add statement.
+
+1.10.4: Complete the algorithm that computes the cost of a shipment.
+
+1. Select a pseudocode statement to complete the following algorithm, which 
+computes the cost of a shipment. Shipping costs depend on the weight of the 
+item being shipped. The cost is $10 if the item weighs up to five pounds. 
+For heavier items, the cost is $10 plus $2 for each pound in excess of five.
+
+1.10.4: Complete the algorithm that computes the cost of a shipment.
+1. Select a pseudocode statement to complete the following algorithm, which 
+computes the cost of a shipment. Shipping costs depend on the weight of the 
+item being shipped. The cost is $10 if the item weighs up to five pounds. For 
+heavier items, the cost is $10 plus $2 for each pound in excess of five.
+
+cost = $10
+If weight is greater than five pounds
+   ________________________
+   extra charge = $2 x number of excess pounds
+   Add extra charge to cost.
+
+number of excess pounds = weight - 5

@@ -1,0 +1,51 @@
+What Is Programming?
+
+Chapter Goals 1.1.1
+    - To learn about the architecture of computers
+    - To learn about machine languages and higher-level programming languages
+    - To become familiar with your compiler
+    - To compile and run your first C++ program
+    - To recognize compile-time and run-time errors
+    - To describe an algorithm with pseudocode
+    - To understand the activity of programming
+
+Computers 
+Computers can carry out a wide range of tasks because they execute different programs, 
+each of which directs the computer to work on a specific task.
+The computer itself is a machine that stores data (numbers, words, pictures), interacts with devices 
+(the monitor, the sound system, the printer), and executes programs.
+The programs the computer executes are called the SOFTWARE
+
+A Computer Program 
+A computer program tells a computer, in minute detail, the sequence of steps that are needed to fulfill a task.
+
+Hardware
+The physical computer and peripheral devices are collectively called the hardware.
+The physical equipment for a computer or another device.
+
+Software
+The programs the computer executes are called the SOFTWARE
+The intangible instructions and data that are necessary for operating a computer or another device.
+
+Today’s computer programs are so sophisticated that it is hard to believe that 
+they are composed of extremely primitive operations. A typical operation may be one of the following:
+- Put a red dot at this screen position.
+- Add up these two numbers.
+- If this value is negative, continue the program at a certain instruction.
+
+The User
+The computer user has the illusion of smooth interaction because a program contains 
+a huge number of such operations, and because the computer can execute them at great speed.
+
+Programming
+The act of designing and implementing computer programs is called programming. Learning to program means you will 
+learn how to program a computer—that is, how to direct the computer to execute tasks.
+
+Reading Questions:
+1.1.1: What is computer equipment called?
+1.The physical computer and peripheral devices are collectively called the
+A. Hardware
+
+1.1.2: What does it take to write a complex program?
+1. Writing the program for a computer game with motion, graphics, and sound effects usually requires _____.
+A. a team of highly skilled programmers writing a large number of simple instructions

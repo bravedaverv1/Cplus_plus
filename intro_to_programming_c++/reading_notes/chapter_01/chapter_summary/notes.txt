@@ -1,0 +1,40 @@
+1.13 Chapter Summary
+
+Define “computer program” and programming.
+• Computers execute very basic instructions in rapid succession.
+• A computer program is a sequence of instructions and decisions.
+• Programming is the act of designing and implementing computer programs.
+
+Describe the components of a computer.
+• The central processing unit (CPU) performs program control and data processing.
+• Storage devices include memory and secondary storage.
+
+Describe the process of translating high-level languages to machine code.
+• Computer programs are stored as machine instructions in a code that depends on the processor type.
+• C++ is a general-purpose language that is in widespread use for systems and embedded programming.
+• High-level programming languages are independent of the processor.
+
+Become familiar with your C++ programming environment.
+• Set aside some time to become familiar with the programming environment that you will use for your class work.
+• An editor is a program for entering and modifying text, such as a C++ program.
+• C++ is case sensitive. You must be careful about distinguishing between upper- and lowercase letters.
+• The compiler translates C++ programs into machine code.
+• The linker combines machine code with library code into an executable program.
+• Develop a strategy for keeping backup copies of your work before disaster strikes.
+
+Describe the building blocks of a simple program.
+• Every C++ program contains a function called main.
+• Use cout and the << operator to display values on the screen.
+• Enclose text strings in quotation marks.
+• Use + to add two numbers and * to multiply two numbers.
+• Send endl to cout to end a line of displayed output.
+• End each statement with a semicolon.
+
+Classify program errors as compile-time and run-time errors.
+• A compile-time error is a violation of the programming language rules that is detected by the compiler.
+• A run-time error causes a program to take an action that the programmer did not intend.
+• The programmer is responsible for inspecting and testing the program to guard against run-time errors.
+
+Write pseudocode for simple algorithms.
+• An algorithm for solving a problem is a sequence of steps that is unambiguous, executable, and terminating.
+• Pseudocode is an informal description of a sequence of steps for solving a problem.

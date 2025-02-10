@@ -1,0 +1,139 @@
+1.6 Becoming Familiar with Your Programming Environment
+
+Many students find that the tools they need as programmers are very different from the software 
+with which they are familiar. You should spend some time making yourself familiar with your 
+programming environment. Because computer systems vary widely. It is a good idea to participate in 
+a hands-on lab, or to ask a knowledgeable friend to give you a tour.
+
+Step 1 Start the C++ development environment.
+
+Computer systems differ greatly in this regard.
+
+integrated development environment
+On many computers there is an integrated development environment in which you can write and test your programs.
+
+On other computers you first launch an editor, a program that functions like a word processor, 
+in which you can enter your C++ instructions; then open a console window and type commands to execute your program. 
+
+Other programming environments are online.
+In such an environment, you write programs in a web browser.
+The programs are then executed on a remote machine, and the results are displayed in the web browser window.
+
+You need to find out how to get started with your environment. 
+
+(Definition of ide (integrated development environment): A programming environment that includes an editor, compiler, and debugger.) 
+(Definition of editor: A program for writing and modifying text files.)
+
+Step 2 Write a simple program.
+The traditional choice for the very first program in a new programming language is a 
+program that displays a simple greeting: “Hello, World!”. Let us follow that tradition. 
+Here is the “Hello, World!” program in C++:
+
+#include <iostream>
+  
+using namespace std;
+  
+int main()
+{
+   cout << "Hello, World!" << endl;
+   return 0;
+}
+
+C++ is case sensitive. You must enter upper- and lowercase letters exactly as they appear in the program listing.
+You cannot type MAIN or Endl. If you are not careful, you will run into problems
+
+Step 3 Compile and run the program.
+The process for building and running a C++ program depends 
+greatly on your programming environment. In some integrated 
+development environments, you simply push a button. In other environments, 
+you may have to type commands. When you run the test program, the message
+
+It is useful to know what goes on behind the scenes when 
+your program gets built. 
+First, 
+the compiler translates the C++ source code (that is, the statements that you wrote) into machine instructions.
+The machine code contains only the translation of the code that you wrote.
+That is not enough to actually run the program.
+
+To display a string on a window
+quite a bit of low-level activity is necessary.
+The implementors of your C++ development environment provided a library that 
+includes the definition of cout and its functionality.
+A library 
+s a collection of code that has been programmed and translated by someone else, 
+ready for you to use in your program.
+(More complicated programs are built from more than one machine code file and more than one library.)
+
+linker
+A program called the linker takes your machine code and the necessary parts from the C++ library and 
+builds an executable file.
+The executable file is usually called file_name.exe or file_name, depending on your computer system. 
+You can run the executable program even after you exit the C++ development environment.
+
+source code: 
+Instructions in a programming language that need to be translated before execution on a computer.
+
+machine code:
+Instructions that can be executed directly by the CPU.
+
+library:
+A set of precompiled classes and functions that can be included in programs.
+
+linker:
+The program that combines object and library files into an executable file.
+
+executable file
+The file that contains a program’s machine instructions. 
+
+Step 4 Organize your work.
+Most C++ compilers require that C++ files end in an extension .cpp, .cxx, .cc, or .C; 
+for example, demo.cpp. 
+(Definition of extension: The last part of a file name, which specifies the file type. 
+For example, the extension .cpp denotes a C++ file.)
+
+Files are stored in folders or directories.
+A folder can contain files as well as other folders, which themselves can contain more files and folders
+(Definition of folder: A structure on a disk that can hold files or other folders; also called a directory.) 
+(Definition of directory: A structure on a disk that can hold files or other directories; also called a folder.)
+
+However, you should create folders for organizing your work. 
+It is a good idea to make a separate folder for your programming class. 
+Inside that folder, make a separate folder for each assignment.
+
+Some programming environments place your programs into a default location 
+if you don’t specify a folder yourself. In that case, you need to find out where 
+those files are located.
+
+Be sure that you understand where your files are located in the folder 
+hierarchy. This information is essential when you submit files for grading, 
+and for making backup copies.
+
+You will spend many hours creating and improving C++ programs. 
+It is easy to delete a file by accident, and occasionally files are lost 
+because of a computer malfunction. To avoid the frustration of recreating lost files, 
+get in the habit of making backup copies of your work on a memory stick or on another 
+computer.
+
+Questions
+1.6.1: Choose which window you type your code into in C++.
+When writing a C++ program, you type your code into a(n) _____ window.
+A. editor
+You write your program in an editor, which may be part of an integrated 
+development environment.
+
+1.6.2: Choose which statement is false about C++.
+Which of the following statements is false?
+A. The distinction between upper- and lowercase letters is unimportant in C++.
+In C++, you must be careful to always use the correct letter case. For example, 
+Using is not acceptable when using is expected.
+
+
+Programming Tip 1.6.1: Backup Copies.
+
+Backing up files on a memory stick is an easy and convenient storage method for many people. Another increasingly popular form of backup is Internet file storage. Here are a few pointers to keep in mind.
+
+Back up often. Backing up a file takes only a few seconds, and you will hate yourself if you have to spend many hours recreating work that you could have saved easily. I recommend that you back up your work once every thirty minutes.
+Rotate backups. Use more than one directory for backups, and rotate them. That is, first back up to the first directory. Then back up to the second directory. Then use the third, and then go back to the first. That way you always have three recent backups. If your recent changes made matters worse, you can then go back to the older version.
+Pay attention to the backup direction. Backing up involves copying files from one place to another. It is important that you do this right—that is, copy from your work location to the backup location. If you do it the wrong way, you will overwrite a newer file with an older version.
+Check your backups once in a while. Double-check that your backups are where you think they are. There is nothing more frustrating than to find out that the backups are not there when you need them.
+Relax, then restore. When you lose a file and need to restore it from backup, you are likely to be in an unhappy, nervous state. Take a deep breath and think through the recovery process before you start. It is not uncommon for an agitated computer user to wipe out the last backup when trying to restore a damaged file.
